@@ -1,0 +1,199 @@
+{
+
+  "Item": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": [
+      "https://www.chocolat-deneuville.com/6782-large_default/votre-cadeau-anniversaire.jpg",
+      "https://cdn-icons-png.flaticon.com/512/1252/1252325.png",
+      "https://cdn-icons-png.flaticon.com/512/1252/1252739.png",
+      "https://cdn-icons-png.flaticon.com/512/1252/1252329.png",
+      "https://cdn-icons-png.flaticon.com/512/1252/1252318.png",
+      "https://cdn-icons-png.flaticon.com/512/1253/1253328.png",
+      "https://cdn-icons-png.flaticon.com/512/1254/1254919.png",
+      "https://cdn-icons-png.flaticon.com/512/1253/1253316.png"
+    ],
+
+    "groups": {"int": {}},
+
+    "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
+    "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }},
+
+    "price": {"int": {"min": 0, "max": 1000}},
+    "currency": ["EUR", "USD", "XOF"],
+    "quantity": {"int": {"min": 0, "max": 1000}}
+  },
+
+
+
+
+
+  "category": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": [
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
+    ],
+
+    "groups": {"int": {}},
+    "parent_id": {"int": {}},
+
+    "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
+    "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }},
+
+    "seo_url": {"regexp": "https://www\\.pakarledev\\./category/[0-9]{1,6}"},
+    "meta_keywords": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "meta_title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "meta_description": {"loremSentences": { "minLength": 100, "maxLength": 250 }}
+
+  },
+
+
+
+
+
+  "User": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": [
+      "https://img.freepik.com/vecteurs-libre/homme-mafieux-mysterieux-fumant-cigarette_52683-34828.jpg",
+      "https://img.freepik.com/vecteurs-libre/homme-mafieux-mysterieux-portant-chapeau_52683-34829.jpg",
+      "https://img.freepik.com/vecteurs-premium/ensemble-filles-sportives-figures-minces-grasses_661800-95.jpg",
+      "https://cdn-icons-png.flaticon.com/512/1249/1249939.png",
+      "https://cdn-icons-png.flaticon.com/512/1249/1249940.png"
+    ],
+
+    "groups": {"int": {}},
+
+    "last_name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "first_name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "user_name": {"regexp": "[A-Z][a-z]{5,10}"},
+    "email": {"regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"},
+    "password": {"string":  {}},
+    "gender": ["M", "F", "n/c"],
+    "telephone": {"regexp": "[0][0-9]{9}"},
+    "website": {"string":  {}},
+    "facebook": {"string":  {}},
+    "twitter": {"string":  {}},
+    "instagram": {"string":  {}},
+    "linkedin": {"string":  {}},
+    "youtube": {"string":  {}},
+    "cgu": {"boolean": {}},
+    "cgv": {"boolean": {}},
+    "confidence": {"boolean": {}},
+    "attr_x": ["x_1", "x_2", "x_3"],
+    "opt_list": ["opt_1", "opt_2", "opt_3"]
+  },
+
+
+
+
+
+  "groups": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": [
+      {"string": "https://img.freepik.com/vecteurs-libre/gens-travail-equipe-pieces-puzzle_24877-54950.jpg"},
+      {"string": "https://img.freepik.com/vecteurs-libre/jeunes-tenant-banniere-vierge_52683-19652.jpg"},
+      {"string": "https://img.freepik.com/vecteurs-libre/illustration-jeunes-qui-parlent_52683-29824.jpg"},
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
+    ],
+
+    "groups": {"int": {}},
+    "parent_id": {"int": {}},
+
+    "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
+    "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }}
+  },
+
+
+
+
+
+  "Plan": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+
+    "groups": {"int": {}},
+
+    "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
+    "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }},
+
+    "price": {"int": {"min": 0, "max": 1000}},
+    "currency": ["EUR", "USD", "XOF"],
+    "quantity": {"int": {"min": 0, "max": 1000}},
+
+    "auto_renew": {"boolean": {}}
+  },
+
+
+
+
+
+  "Adresse": {
+    "id": {"int": {}},
+    "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
+    "is_published": {"boolean": {}},
+    "is_archived": {"boolean": {}},
+    "created_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "updated_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
+    "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "pictures": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
+
+    "groups": {"int": {}},
+
+    "latitude": {"int": {}},
+    "longitude": {"int": {}},
+    "voie": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "lieu_dit": {"loremWords": { "minLength": 5, "maxLength": 20 }},
+    "code_postal": {"regexp": "[0-9]{5}"},
+    "pays": ["France"]
+  }
+
+}
