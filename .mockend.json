@@ -1,7 +1,7 @@
 {
 
   "Item": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -21,7 +21,7 @@
       "https://cdn-icons-png.flaticon.com/512/1253/1253316.png"
     ],
 
-    "groups": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
 
     "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
@@ -37,7 +37,7 @@
 
 
   "category": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -52,8 +52,8 @@
       {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
     ],
 
-    "groups": {"int": {}},
-    "parent_id": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
+    "parent_id": {"int": {"min": 0, "max": 1000}},
 
     "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
@@ -71,7 +71,7 @@
 
 
   "User": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -88,7 +88,7 @@
       "https://cdn-icons-png.flaticon.com/512/1249/1249940.png"
     ],
 
-    "groups": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
 
     "last_name": {"regexp": "[A-Z][a-z]{5,10}"},
     "first_name": {"regexp": "[A-Z][a-z]{5,10}"},
@@ -115,7 +115,7 @@
 
 
   "groups": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -133,8 +133,8 @@
       {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
     ],
 
-    "groups": {"int": {}},
-    "parent_id": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
+    "parent_id": {"int": {"min": 0, "max": 1000}},
 
     "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
@@ -146,7 +146,7 @@
 
 
   "Plan": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -157,7 +157,7 @@
     "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "pictures": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
 
-    "groups": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
 
     "title": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "description": {"loremSentences": { "minLength": 100, "maxLength": 250 }},
@@ -175,7 +175,7 @@
 
 
   "Adresse": {
-    "id": {"int": {}},
+    "id": {"int": {"min": 0, "max": 1000}},
     "ref_code": {"regexp": "[A-Z][0-9]{6,10}"},
     "is_published": {"boolean": {}},
     "is_archived": {"boolean": {}},
@@ -186,10 +186,10 @@
     "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "pictures": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
 
-    "groups": {"int": {}},
+    "groups": {"int": {"min": 0, "max": 1000}},
 
-    "latitude": {"int": {}},
-    "longitude": {"int": {}},
+    "latitude": {"int": {"min": 0, "max": 1000}},
+    "longitude": {"int": {"min": 0, "max": 1000}},
     "voie": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "lieu_dit": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "code_postal": {"regexp": "[0-9]{5}"},
