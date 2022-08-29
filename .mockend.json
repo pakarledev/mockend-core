@@ -28,7 +28,7 @@
     "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }},
 
     "price": {"int": {"min": 0, "max": 1000}},
-    "currency": ["EUR", "USD", "XOF"],
+    "currency": {"string": ["EUR", "USD", "XOF"]},
     "quantity": {"int": {"min": 0, "max": 1000}}
   },
 
@@ -106,8 +106,8 @@
     "cgu": {"boolean": {}},
     "cgv": {"boolean": {}},
     "confidence": {"boolean": {}},
-    "attr_x": ["x_1", "x_2", "x_3"],
-    "opt_list": ["opt_1", "opt_2", "opt_3"]
+    "attr_x": {"string": ["x_1", "x_2", "x_3"]},
+    "opt_list": {"string": ["opt_1", "opt_2", "opt_3"]}
   },
 
 
@@ -164,7 +164,7 @@
     "content": {"loremParagraphs": { "minLength": 250, "maxLength": 500 }},
 
     "price": {"int": {"min": 0, "max": 1000}},
-    "currency": ["EUR", "USD", "XOF"],
+    "currency": {"string": ["EUR", "USD", "XOF"]},
     "quantity": {"int": {"min": 0, "max": 1000}},
 
     "auto_renew": {"boolean": {}}
