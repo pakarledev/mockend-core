@@ -193,7 +193,7 @@
     "voie": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "lieu_dit": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "code_postal": {"regexp": "[0-9]{5}"},
-    "pays": ["France"]
+    "pays": {"string": ["France"]}
   }
 
 }
