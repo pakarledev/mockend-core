@@ -47,8 +47,6 @@
     "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
     "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "pictures": {"string": [
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
       {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
     ]},
 
