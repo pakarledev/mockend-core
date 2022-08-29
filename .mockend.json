@@ -46,9 +46,7 @@
     "published_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
     "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
     "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
-    "pictures": {"string": [
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
-    ]},
+    "pictures": {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
 
     "groups": {"int": {"min": 0, "max": 1000}},
     "parent_id": {"int": {"min": 0, "max": 1000}},
@@ -123,12 +121,9 @@
     "archived_at": {"dateTime": {"min": "2010-01-01T00:00:00Z", "max": "2030-12-31T23:59:59Z"}},
     "tags": {"loremWords": { "minLength": 5, "maxLength": 20 }},
     "pictures": {"string": [
-      {"string": "https://img.freepik.com/vecteurs-libre/gens-travail-equipe-pieces-puzzle_24877-54950.jpg"},
-      {"string": "https://img.freepik.com/vecteurs-libre/jeunes-tenant-banniere-vierge_52683-19652.jpg"},
-      {"string": "https://img.freepik.com/vecteurs-libre/illustration-jeunes-qui-parlent_52683-29824.jpg"},
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"},
-      {"regexp": "https://picsum\\.photos/seed/[0-9]{5}/200"}
+      "https://img.freepik.com/vecteurs-libre/gens-travail-equipe-pieces-puzzle_24877-54950.jpg",
+      "https://img.freepik.com/vecteurs-libre/jeunes-tenant-banniere-vierge_52683-19652.jpg",
+      "https://img.freepik.com/vecteurs-libre/illustration-jeunes-qui-parlent_52683-29824.jpg"
     ]},
 
     "groups": {"int": {"min": 0, "max": 1000}},
